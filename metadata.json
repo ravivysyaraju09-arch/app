@@ -1,0 +1,8 @@
+{
+  "name": "Verdant Leaf - Premium Tea Atelier",
+  "description": "A luxury direct-to-consumer tea boutique featuring AI-powered tea sommelier services, subscription management, and a premium shopping experience.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}

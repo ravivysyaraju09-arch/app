@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="#1B3022">
+    <link rel="manifest" href="manifest.json">
+    <title>Verdant Leaf | Premium Tea Boutique</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              leaf: {
+                50: '#f4f7f4',
+                100: '#e5ebe5',
+                200: '#cedbcd',
+                300: '#a8c2a7',
+                400: '#7da17c',
+                500: '#5a8259',
+                600: '#466845',
+                700: '#395338',
+                800: '#2f432f',
+                900: '#1B3022', 
+              },
+              gold: {
+                DEFAULT: '#D4AF37',
+                light: '#E5C76B',
+                dark: '#A68926',
+              },
+              cream: '#FDFBF7',
+            },
+            fontFamily: {
+              serif: ['Playfair Display', 'serif'],
+              sans: ['Inter', 'sans-serif'],
+            },
+            animation: {
+              'fade-up': 'fadeUp 0.6s ease-out forwards',
+              'bounce-subtle': 'bounceSubtle 0.4s ease-in-out',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      :root {
+        --safe-top: env(safe-area-inset-top);
+        --safe-bottom: env(safe-area-inset-bottom);
+      }
+      @keyframes fadeUp {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      @keyframes bounceSubtle {
+        0%, 100% { transform: scale(1); }
+        50% { transform: scale(1.1); }
+      }
+      * {
+        -webkit-tap-highlight-color: transparent;
+        user-select: none;
+      }
+      input, textarea {
+        user-select: auto;
+      }
+      body {
+        overscroll-behavior-y: none;
+        background-color: #FDFBF7;
+      }
+      ::-webkit-scrollbar {
+        display: none;
+      }
+      .page-transition-enter {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+      .page-transition-enter-active {
+        opacity: 1;
+        transform: translateY(0);
+        transition: opacity 300ms, transform 300ms;
+      }
+      .splash-fade-out {
+        animation: fadeOut 0.8s forwards;
+        animation-delay: 1.5s;
+      }
+      @keyframes fadeOut {
+        from { opacity: 1; visibility: visible; }
+        to { opacity: 0; visibility: hidden; }
+      }
+      .safe-pt { padding-top: var(--safe-top); }
+      .safe-pb { padding-bottom: var(--safe-bottom); }
+      
+      .parallax-hero {
+        background-attachment: fixed;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.13.0",
+    "@google/genai": "https://esm.sh/@google/genai@^1.41.0"
+  }
+}
+</script>
+</head>
+  <body class="bg-cream font-sans text-leaf-900 overflow-x-hidden m-0 p-0">
+    <div id="root"></div>
+  </body>
+</html>

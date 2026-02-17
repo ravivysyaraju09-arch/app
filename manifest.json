@@ -1,0 +1,22 @@
+
+{
+  "name": "Verdant Leaf Atelier",
+  "short_name": "VerdantLeaf",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#FDFBF7",
+  "theme_color": "#1B3022",
+  "description": "Luxury Premium Tea Boutique",
+  "icons": [
+    {
+      "src": "https://images.unsplash.com/photo-1597481499750-3e6b22637e12?auto=format&fit=crop&q=80&w=192",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1597481499750-3e6b22637e12?auto=format&fit=crop&q=80&w=512",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
