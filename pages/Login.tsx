@@ -183,7 +183,6 @@ export const Login: React.FC<LoginProps> = ({ onLogin }) => {
                 </button>
                 <h2 className="font-serif text-2xl text-leaf-900 italic">Verify OTP</h2>
                 <p className="text-sm text-leaf-400 font-light">Sent to +91 {mobile}</p>
-                <p className="text-[10px] text-gold font-bold uppercase">Dev Mode: Any 6-digit code will work</p>
               </div>
 
               <div className="space-y-6">
